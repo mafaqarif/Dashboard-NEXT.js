@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.sidebar {
+  width: 20%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    display: block;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
