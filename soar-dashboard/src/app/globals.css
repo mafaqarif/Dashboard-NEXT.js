@@ -8,12 +8,6 @@ body {
   width: 20%;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
 .card {
   background-color: #ffffff;
   padding: 20px;
@@ -28,6 +22,19 @@ body {
 }
 .cardOuter {
   padding: 10px;
+}
+.white-rounded {
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.row3-height {
+  height: 275px;
+}
+.sidebar-link {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 20;
+  align-items: center;
 }
 
 @media (max-width: 768px) {

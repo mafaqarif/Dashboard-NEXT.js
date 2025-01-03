@@ -1,0 +1,61 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background-color: white;
+  gap: 20px;
+  padding: 0px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  border-right: 1px solid #e6eff5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.headerRight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+}
+.innerRight {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center; /* Vertically center the icon and text */
+  border-radius: 20px; /* Adjust for desired roundness */
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 15px 20px; /* Adjust padding as needed */
+  border: none;
+  width: fit-content; /* or a fixed width like 300px */
+  color: #8ba3cb;
+}
+
+.searchContainer input[type="text"] {
+  border: none;
+  outline: none; /* Remove default input outline */
+  background: transparent; /* Make input background transparent */
+  flex-grow: 1; /* Allow input to take up available space */
+  font-size: 16px; /* Adjust font size as needed */
+  padding-left: 4px; /* Space between the icon and text */
+  color: #8ba3cb; /* Darker gray text color */
+}
+
+.searchIcon {
+  color: #8ba3cb; /* Light blue icon color */
+  font-size: 18px; /* Adjust icon size as needed */
+  cursor: default; /* Optional: Make the icon not look clickable */
+  margin-right: 10px;
+}
+
+/* Optional: Add hover effect */
+.searchContainer:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow on hover */
+}

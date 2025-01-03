@@ -14,16 +14,18 @@ import Row3 from "../../components/Row3";
 
 export default function Home() {
   return (
-    <div className={styles.dashboard}>
-      <Sidebar />
-      <div>
-        <Navbar />
-        <main className={styles.mainComponent}>
-          <Row1 />
-          <Row2 />
-          <Row3 />
-        </main>
+    <>
+      <Navbar />
+      <div className={styles.dashboard}>
+        <Sidebar />
+        <div>
+          <main className={styles.mainComponent}>
+            <Row1 />
+            <Row2 />
+            <Row3 />
+          </main>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -95,7 +95,7 @@ const WeeklyActivity: React.FC = () => {
   };
 
   return (
-    <div className="weekly-activity">
+    <div className="weekly-activity white-rounded">
       <Bar data={data} options={options} />
     </div>
   );

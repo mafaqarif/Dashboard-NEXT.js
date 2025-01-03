@@ -4,3 +4,15 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.sidebarUl {
+  list-style-type: none;
+}
+
+.sidebarUl li {
+  margin-top: 15px;
+  color: #b1b1b1;
+}
+.sidebarUl li.selected {
+  color: #000;
+}

@@ -2,14 +2,14 @@
   display: grid;
   grid-template-columns: 1fr 5fr; /* Adjust as needed */
   gap: 20px;
-  padding: 20px;
+  padding: 0px 20px;
   background-color: #f8f9fa; /* Example background */
 }
 .mainComponent {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   display: grid;
   /* grid-template-columns: repeat(
     auto-fit,

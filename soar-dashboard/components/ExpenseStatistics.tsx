@@ -17,7 +17,7 @@ const ExpenseStatistics: React.FC = () => {
   };
 
   return (
-    <div className="expense-statistics">
+    <div className="expense-statistics white-rounded">
       <Pie data={data} />
     </div>
   );

@@ -38,7 +38,7 @@ const BalanceHistory: React.FC = () => {
   };
   const options: ChartOptions<"line"> = {
     responsive: true,
-    // maintainAspectRatio: false,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         position: "top" as const,
@@ -85,7 +85,7 @@ const BalanceHistory: React.FC = () => {
   };
 
   return (
-    <div className="balance-history">
+    <div className="balance-history white-rounded row3-height">
       <Line data={data} options={options} />
     </div>
   );
