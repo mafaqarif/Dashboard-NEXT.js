@@ -18,7 +18,6 @@ const ExpenseStatistics: React.FC = () => {
 
   return (
     <div className="expense-statistics">
-      <h3>Expense Statistics</h3>
       <Pie data={data} />
     </div>
   );

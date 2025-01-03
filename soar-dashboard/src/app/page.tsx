@@ -8,34 +8,22 @@ import WeeklyActivity from "../../components/WeeklyActivity";
 import ExpenseStatistics from "../../components/ExpenseStatistics";
 import QuickTransfer from "../../components/QuickTransfer";
 import BalanceHistory from "../../components/BalanceHistory";
+import Row1 from "../../components/Row1";
+import Row2 from "../../components/Row2";
+import Row3 from "../../components/Row3";
 
 export default function Home() {
-  const transactions = [
-    {
-      description: "Deposit from my Card",
-      date: "28 Jan 2021",
-      amount: "-$850",
-    },
-    { description: "Deposit Paypal", date: "25 Jan 2021", amount: "+$2,500" },
-    { description: "Jemi Wilson", date: "21 Jan 2021", amount: "+$5,400" },
-  ];
   return (
     <div className={styles.dashboard}>
       <Sidebar />
-      <main className={styles.mainComponent}>
+      <div>
         <Navbar />
-        <Card
-          balance="5,756"
-          cardHolder="Eddy Cusuma"
-          validThru="12/22"
-          cardNumber="377812341234"
-        />
-        <RecentTransactions transactions={transactions} />
-        <WeeklyActivity />
-        <ExpenseStatistics />
-        <QuickTransfer />
-        <BalanceHistory />
-      </main>
+        <main className={styles.mainComponent}>
+          <Row1 />
+          <Row2 />
+          <Row3 />
+        </main>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,23 @@
+.row {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Adjust as needed */
+  gap: 50px;
+  padding: 20px;
+  background-color: #f8f9fa; /* Example background */
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Adjust as needed */
+  gap: 50px;
+  padding: 20px;
+  background-color: #f8f9fa; /* Example background */
+}
+
+.rowInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Adjust as needed */
+  gap: 20px;
+  padding: 20px 20px 20px 0px;
+  background-color: #f8f9fa; /* Example background */
+}
