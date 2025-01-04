@@ -15,6 +15,19 @@
   overflow: hidden; /* Hide content that overflows rounded corners*/
 }
 
+.card2 {
+  width: 350px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  background-color: #ffffff; /* Dark gradient background */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  font-family: sans-serif; /* Use a clean font */
+  color: #343c6a; /* Light text color */
+  position: relative; /* For absolute positioning of elements */
+  overflow: hidden; /* Hide content that overflows rounded corners*/
+}
+
 .balance {
   font-size: 1.2em;
   margin-bottom: 5px;
@@ -48,13 +61,25 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 40px;
-  height: 30px;
-  background-color: #ddd;
+  width: 35px;
+  height: 35px;
+  background-color: #302f38;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
 }
-
+.chip2 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 5px;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
+}
+.chip2 img {
+  filter: invert(100%);
+}
 .contactless {
   position: absolute;
   bottom: 20px;

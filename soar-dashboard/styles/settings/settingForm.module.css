@@ -1,0 +1,38 @@
+.settingsFromMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+.inputDiv {
+  gap: 10px;
+}
+.label {
+  display: block;
+  font-size: 16px;
+}
+.input {
+  margin-top: 10px;
+  width: 91%;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #dfeaf2;
+  outline: none;
+}
+.input::placeholder {
+  color: #718ebf;
+}
+.input:focus {
+  border: 1px solid #dfeaf2;
+}
+.formSave {
+  margin-top: 10px;
+  display: flex;
+}
+.submitBtn {
+  padding: 10px 25px;
+  width: 150px;
+  background-color: #000;
+  border-radius: 10px;
+  color: #fff;
+  margin-left: auto;
+}

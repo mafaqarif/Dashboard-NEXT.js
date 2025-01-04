@@ -1,0 +1,24 @@
+.profileMain {
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.profilePictureSection {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.editButtonSpan {
+  background-color: #000;
+  padding: 1px;
+  border-radius: 100%;
+  position: relative;
+  right: 20px;
+}
+.profileEditButton {
+  filter: invert(100);
+  /* background-color: #000; */
+  padding: 5px;
+  border-radius: 100%;
+  font-size: 20px;
+}

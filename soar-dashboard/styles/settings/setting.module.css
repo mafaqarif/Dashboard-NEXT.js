@@ -1,0 +1,28 @@
+.mainSettings {
+  background-color: #ffffff;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 25px;
+}
+.settingNav {
+  display: flex;
+  gap: 5%;
+  list-style: none;
+  align-items: flex-start;
+  color: #718ebf;
+  margin-bottom: 0px;
+}
+.settingNav li {
+  padding: 5px 15px;
+}
+
+.selectedSetting {
+  color: black;
+  font-weight: 700;
+  border-bottom: 2px solid black;
+}
+.settingNavHr {
+  margin: 0px auto;
+  width: 93%;
+  border-color: #f4f5f7;
+}

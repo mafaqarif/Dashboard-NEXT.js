@@ -4,7 +4,8 @@
 }
 
 .send {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
@@ -20,6 +21,11 @@
   background-color: #edf1f7;
   border-radius: 25px; /* Round corners */
   padding: 15px 20px;
+  width: 50%;
+}
+.send p {
+  color: #718ebf;
+  font-size: 15px;
 }
 .send button {
   border-radius: 25px; /* Round corners */

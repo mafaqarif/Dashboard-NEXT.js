@@ -1,10 +1,12 @@
 import styles from "../styles/card.module.css";
+import Image from "next/image";
 
 interface CardProps {
   balance: string;
   cardHolder: string;
   validThru: string;
   cardNumber: string;
+  cardBlack: boolean;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -12,6 +14,7 @@ const Card: React.FC<CardProps> = ({
   cardHolder,
   validThru,
   cardNumber,
+  cardBlack,
 }) => (
   // <div className={styles.card}>
   //   <h3>Balance</h3>
@@ -21,7 +24,7 @@ const Card: React.FC<CardProps> = ({
   //   <p>**** **** **** {cardNumber.slice(-4)}</p>
   // </div>
 
-  <div className={styles.card}>
+  <div className={cardBlack ? `${styles.card}` : `${styles.card2}`}>
     <div className={styles.balance}>Balance</div>
     <div className={styles.amount}>$5,756</div>
     <div className={styles.cardDetails}>
@@ -37,7 +40,9 @@ const Card: React.FC<CardProps> = ({
       </div>
     </div>
     <div className={styles.cardNumber}>3778 **** **** 1234</div>
-    <div className={styles.chip}></div>
+    <div className={cardBlack ? `${styles.chip}` : `${styles.chip2}`}>
+      <Image src="/credit-chip.png" alt="credit card" width={35} height={35} />
+    </div>
     <div className={styles.contactless}>
       <div className={styles.contactlessCircle}></div>
       <div className={styles.contactlessCircle}></div>

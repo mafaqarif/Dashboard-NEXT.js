@@ -2,8 +2,17 @@
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
+  gap: 5px;
+  padding: 15px;
 }
-
+.tansactionInfoH3 {
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+.tansactionInfoP {
+  font-size: 15px;
+  margin-top: 5px;
+}
 .positive {
   color: #41d4a8;
 }

@@ -36,12 +36,14 @@ const Row1 = () => {
             cardHolder="Eddy Cusuma"
             validThru="12/22"
             cardNumber="377812341234"
+            cardBlack={true}
           />
           <Card
             balance="5,756"
             cardHolder="Eddy Cusuma"
             validThru="12/22"
             cardNumber="377812341234"
+            cardBlack={false}
           />
         </div>
       </CardOuter>

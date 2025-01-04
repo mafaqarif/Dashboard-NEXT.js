@@ -20,8 +20,8 @@ const TransactionItem: React.FC<TransactionItem> = ({
     <div className={styles.transactionItem}>
       <Image src={imageUrl} alt={imageUrl} width={55} height={55} />
       <div className={styles.transactionInfo}>
-        <h3>{title}</h3>
-        <p>{subTitle}</p>
+        <h3 className={styles.tansactionInfoH3}>{title}</h3>
+        <p className={styles.tansactionInfoP}>{subTitle}</p>
       </div>
       <p className={positive ? styles.positive : styles.negative}>{price}</p>
     </div>
