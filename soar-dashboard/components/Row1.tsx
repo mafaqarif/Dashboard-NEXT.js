@@ -9,9 +9,23 @@ const Row1 = () => {
       description: "Deposit from my Card",
       date: "28 Jan 2021",
       amount: "-$850",
+      positive: false,
+      imageUrl: "/transaction-1.png",
     },
-    { description: "Deposit Paypal", date: "25 Jan 2021", amount: "+$2,500" },
-    { description: "Jemi Wilson", date: "21 Jan 2021", amount: "+$5,400" },
+    {
+      description: "Deposit Paypal",
+      date: "25 Jan 2021",
+      amount: "+$2,500",
+      positive: true,
+      imageUrl: "/transaction-2.png",
+    },
+    {
+      description: "Jemi Wilson",
+      date: "21 Jan 2021",
+      amount: "+$5,400",
+      positive: true,
+      imageUrl: "/transaction-3.png",
+    },
   ];
   return (
     <div className={styles.row}>

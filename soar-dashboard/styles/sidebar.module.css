@@ -9,6 +9,14 @@
   list-style-type: none;
 }
 
+.sidebarUl a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Optional: Match parent text color */
+}
+.sidebarUl a:hover {
+  color: #000;
+}
+
 .sidebarUl li {
   margin-top: 15px;
   color: #b1b1b1;

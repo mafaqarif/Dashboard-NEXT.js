@@ -1,7 +1,11 @@
+import TransactionItem from "./TransactionItem";
+
 interface Transaction {
   description: string;
   date: string;
   amount: string;
+  positive: boolean;
+  imageUrl: string;
 }
 
 interface RecentTransactionsProps {
@@ -11,15 +15,17 @@ interface RecentTransactionsProps {
 const RecentTransactions: React.FC<RecentTransactionsProps> = ({
   transactions,
 }) => (
-  <div className="recent-transactions">
-    <h3>Recent Transactions</h3>
+  <div className="recent-transactions white-rounded">
     <ul>
       {transactions.map((txn, index) => (
-        <li key={index}>
-          <p>{txn.description}</p>
-          <p>{txn.date}</p>
-          <p>{txn.amount}</p>
-        </li>
+        <TransactionItem
+          key={index}
+          title={txn.description}
+          subTitle={txn.date}
+          price={txn.amount}
+          positive={txn.positive}
+          imageUrl={txn.imageUrl}
+        />
       ))}
     </ul>
   </div>

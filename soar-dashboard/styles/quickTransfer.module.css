@@ -1,0 +1,31 @@
+.carouselContainer {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.send {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.send input[type="text"] {
+  border: none;
+  outline: none; /* Remove default input outline */
+  background: transparent; /* Make input background transparent */
+  flex-grow: 1; /* Allow input to take up available space */
+  font-size: 16px; /* Adjust font size as needed */
+  color: #8ba3cb; /* Darker gray text color */
+  background-color: #edf1f7;
+  border-radius: 25px; /* Round corners */
+  padding: 15px 20px;
+}
+.send button {
+  border-radius: 25px; /* Round corners */
+  background-color: black;
+  color: white;
+  padding: 15px;
+  gap: 10px;
+  margin-left: -25px;
+}

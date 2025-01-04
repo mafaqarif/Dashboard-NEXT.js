@@ -15,16 +15,13 @@ import Row3 from "../../components/Row3";
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <div className={styles.dashboard}>
-        <Sidebar />
-        <div>
-          <main className={styles.mainComponent}>
-            <Row1 />
-            <Row2 />
-            <Row3 />
-          </main>
-        </div>
+      {/* <Navbar /> */}
+      <div>
+        <main className={styles.mainComponent}>
+          <Row1 />
+          <Row2 />
+          <Row3 />
+        </main>
       </div>
     </>
   );
