@@ -36,3 +36,17 @@
   color: #fff;
   margin-left: auto;
 }
+
+@media screen and (max-width: 768px) {
+  .input {
+    margin-top: 10px;
+    width: 80%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #dfeaf2;
+    outline: none;
+  }
+  .submitBtn {
+    width: 100%;
+  }
+}

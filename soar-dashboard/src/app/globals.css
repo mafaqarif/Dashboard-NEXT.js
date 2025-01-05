@@ -38,22 +38,20 @@ body {
 }
 .mainContent {
   display: grid;
-  grid-template-columns: 1fr 5fr; /* Adjust as needed */
+  grid-template-columns: 1fr 5fr;
   gap: 20px;
   padding: 0px 20px;
-  background-color: #f8f9fa; /* Example background */
+  background-color: #f8f9fa;
   margin-top: 100px;
 }
-.recent-transactions {
-}
+
 .recent-transactions ul {
   padding: 0px;
 }
 
-/* .slick-slide {
-  margin-right: 20px; 
-} 
-*/
+.mobile-show {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .dashboard {
@@ -63,4 +61,16 @@ body {
   .sidebar {
     display: none;
   }
+  .mobile-hide {
+    display: none;
+  }
+  .mainContent {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+  }
+  .mobile-show {
+    display: inline;
+  }
 }
+/* @media screen and (max-width: ) {
+} */

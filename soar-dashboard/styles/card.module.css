@@ -117,3 +117,34 @@
   z-index: 0; /* Place it behind the content */
   pointer-events: none; /* Make it non-interactive */
 }
+
+@media screen and (max-width: 768px) {
+  .card,
+  .card2 {
+    width: 290px;
+    height: 150px;
+    padding: 15px;
+  }
+  .balance {
+    font-size: 0.8em;
+  }
+
+  .amount {
+    font-size: 1.2em;
+  }
+
+  .cardDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .cardHolder,
+  .validThru {
+    font-size: 0.6em;
+  }
+
+  .cardNumber {
+    font-size: 1em;
+  }
+}

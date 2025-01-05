@@ -5,12 +5,13 @@
   padding: 0px 20px;
   background-color: #f8f9fa; /* Example background */
 }
-.mainComponent {
+.pageMainComponent {
   /* background-color: #ffffff; */
   padding: 20px;
   border-radius: 8px;
+  margin-bottom: 50px;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  display: grid;
+  /* display: grid; */
   /* grid-template-columns: repeat(
     auto-fit,
     minmax(300px, 1fr)

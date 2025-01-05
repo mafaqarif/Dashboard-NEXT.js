@@ -22,3 +22,13 @@
   border-radius: 100%;
   font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .profileMain {
+    grid-template-columns: 1fr;
+    padding: 40px 0px;
+  }
+  .profilePictureSection {
+    margin-bottom: 50px;
+  }
+}

@@ -29,19 +29,19 @@ const WeeklyActivity: React.FC = () => {
         label: "Deposit",
         data: [200, 400, 300, 500, 200, 300, 400],
         backgroundColor: "#4c6ef5",
-        barThickness: 20,
+        barThickness: 15,
       },
       {
         label: "Withdraw",
         data: [100, 200, 150, 300, 100, 150, 250],
         backgroundColor: "#000",
-        barThickness: 20,
+        barThickness: 15,
       },
     ],
   };
   const options = {
     responsive: true,
-    // maintainAspectRatio: false,
+    maintainAspectRatio: true,
     plugins: {
       legend: {
         position: "top" as const, // Default position

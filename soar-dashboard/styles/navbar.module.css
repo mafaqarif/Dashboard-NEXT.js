@@ -31,7 +31,8 @@
   align-items: center;
 }
 
-.searchContainer {
+.searchContainer,
+.searchContainer2 {
   display: flex;
   align-items: center; /* Vertically center the icon and text */
   border-radius: 20px; /* Adjust for desired roundness */
@@ -42,7 +43,8 @@
   color: #8ba3cb;
 }
 
-.searchContainer input[type="text"] {
+.searchContainer input[type="text"],
+.searchContainer2 input[type="text"] {
   border: none;
   outline: none; /* Remove default input outline */
   background: transparent; /* Make input background transparent */
@@ -50,6 +52,9 @@
   font-size: 16px; /* Adjust font size as needed */
   padding-left: 4px; /* Space between the icon and text */
   color: #8ba3cb; /* Darker gray text color */
+}
+.searchContainer2 {
+  display: none;
 }
 
 .searchIcon {
@@ -62,4 +67,32 @@
 /* Optional: Add hover effect */
 .searchContainer:hover {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow on hover */
+}
+.menuBarsButton {
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0px;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .headerRight {
+    grid-template-columns: 0.7fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .searchContainer {
+    display: none;
+  }
+  .searchContainer2 {
+    width: 80%;
+    display: block;
+  }
+  .navbar {
+    display: block;
+    position: static;
+    padding: 15px;
+    width: auto;
+  }
 }

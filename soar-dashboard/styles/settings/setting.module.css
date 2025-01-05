@@ -26,3 +26,8 @@
   width: 93%;
   border-color: #f4f5f7;
 }
+@media screen and (max-width: 768px) {
+  .settingNav {
+    padding: 0;
+  }
+}

@@ -2,7 +2,7 @@ import styles from "../styles/sidebar.module.css";
 import SidebarLink from "./SidebarLink";
 
 const Sidebar: React.FC = () => (
-  <aside className={styles.sidebar}>
+  <aside className={`${styles.sidebar} mobile-hide`}>
     <nav>
       <ul className={styles.sidebarUl}>
         <li className={styles.selected}>
